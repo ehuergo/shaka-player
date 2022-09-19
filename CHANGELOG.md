@@ -1,5 +1,26 @@
 # Changelog
 
+## [4.3.0](https://github.com/shaka-project/shaka-player/compare/v4.2.0...v4.3.0) (2022-09-19)
+
+
+### Features
+
+* Add limited support for HLS "identity" key format ([#4451](https://github.com/shaka-project/shaka-player/issues/4451)) ([b1e81a6](https://github.com/shaka-project/shaka-player/commit/b1e81a684afe086b7a37ea29bbbfc972575ba332)), closes [#2146](https://github.com/shaka-project/shaka-player/issues/2146)
+* **demo:** Demo visualizer for buffered ranges. ([#4417](https://github.com/shaka-project/shaka-player/issues/4417)) ([55d0a15](https://github.com/shaka-project/shaka-player/commit/55d0a1556a273b6af0da16197b424796a175adf8))
+* Parse and surface "prft" boxes as events ([#4389](https://github.com/shaka-project/shaka-player/issues/4389)) ([89777dd](https://github.com/shaka-project/shaka-player/commit/89777dd7043ae2b5fa213ab73e43f93482bb86d0)), closes [#4382](https://github.com/shaka-project/shaka-player/issues/4382)
+
+
+### Bug Fixes
+
+* Filter unsupported H.264 streams in Xbox ([#4493](https://github.com/shaka-project/shaka-player/issues/4493)) ([8475214](https://github.com/shaka-project/shaka-player/commit/8475214bc46e8321f7b60a6fc7fabee484a40800))
+* Fix bitmap-based cue size ([#4453](https://github.com/shaka-project/shaka-player/issues/4453)) ([4a197e1](https://github.com/shaka-project/shaka-player/commit/4a197e1288c8f20a950cf491041eca9dde7033cb))
+* Fix drm.keySystemsMapping config ([#4425](https://github.com/shaka-project/shaka-player/issues/4425)) ([d945084](https://github.com/shaka-project/shaka-player/commit/d9450846e11224e0b1add6cc20a64844d6c09fcf)), closes [#4422](https://github.com/shaka-project/shaka-player/issues/4422)
+* Fix HLS dynamic to static transition ([a16b1ac](https://github.com/shaka-project/shaka-player/commit/a16b1ac8a4c8f367f65747fc789a7d8c160e29e3))
+* Fix HLS dynamic to static transition ([#4483](https://github.com/shaka-project/shaka-player/issues/4483)) ([a16b1ac](https://github.com/shaka-project/shaka-player/commit/a16b1ac8a4c8f367f65747fc789a7d8c160e29e3)), closes [#4431](https://github.com/shaka-project/shaka-player/issues/4431)
+* Fix vanishing tracks while offline ([#4426](https://github.com/shaka-project/shaka-player/issues/4426)) ([c935cc1](https://github.com/shaka-project/shaka-player/commit/c935cc17703297a44b3ce3bda75d8f2ea37f4147)), closes [#4408](https://github.com/shaka-project/shaka-player/issues/4408)
+* return width and height in the stats when we are using src= ([#4435](https://github.com/shaka-project/shaka-player/issues/4435)) ([9bbfb57](https://github.com/shaka-project/shaka-player/commit/9bbfb57cb4e2c0653e6eb5681e10714cb939bad9))
+* **UI:** Ad position and ad counter are too close to each other ([#4416](https://github.com/shaka-project/shaka-player/issues/4416)) ([8376410](https://github.com/shaka-project/shaka-player/commit/83764104277363b6ce0e05d8e53449ff454c6f0e))
+
 ## [4.2.0](https://github.com/shaka-project/shaka-player/compare/v4.1.0...v4.2.0) (2022-08-16)
 
 
