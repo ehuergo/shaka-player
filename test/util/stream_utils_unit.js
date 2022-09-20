@@ -430,7 +430,10 @@ describe('StreamUtils', function() {
       addVariant2160Vp9(generator);
       manifest = generator.build();
 
-      shaka.util.StreamUtils.chooseCodecsAndFilterManifest(manifest, 2);
+      shaka.util.StreamUtils.chooseCodecsAndFilterManifest(manifest,
+        /* preferredVideoCodecs= */[],
+          /* preferredAudioCodecs= */[],
+          /* preferredAudioChannelCount= */2);
 
       expect(manifest.periods[0].variants.length).toBe(2);
       expect(manifest.periods[0].variants[0].video.codecs).toBe(vp09Codecs);
@@ -444,7 +447,10 @@ describe('StreamUtils', function() {
       addVariant1080Vp9(generator);
       manifest = generator.build();
 
-      shaka.util.StreamUtils.chooseCodecsAndFilterManifest(manifest, 2);
+      shaka.util.StreamUtils.chooseCodecsAndFilterManifest(manifest,
+        /* preferredVideoCodecs= */[],
+          /* preferredAudioCodecs= */[],
+          /* preferredAudioChannelCount= */2);
 
       expect(manifest.periods[0].variants.length).toBe(1);
       expect(manifest.periods[0].variants[0].video.codecs).toBe(vp09Codecs);
